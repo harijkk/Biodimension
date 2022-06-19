@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
 from django.core.mail import send_mail, EmailMessage
+from django.template import RequestContext
 # Create your views here.
 
 
@@ -51,7 +52,7 @@ def send1(request):
             fail_silently=False,
         )
 
-        return HttpResponseRedirect('contact')
+        return RequestContext(request,'contact')
     else:
         return HttpResponse("INVALID REQUEST")
 
