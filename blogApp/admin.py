@@ -1,0 +1,18 @@
+from django.contrib import admin
+from .models import Post
+
+# Register your models here.
+
+
+class PostAdmin(admin.ModelAdmin):
+    list_display = ('title',)
+    search_fields = ('title',)
+   # list_filter = ('cat',)
+
+   # class Media:
+    #    js = (
+    #       'https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js', 'js/script.js',)
+
+
+#admin.site.register(Category, CategoryAdmin)
+admin.site.register(Post, PostAdmin)
