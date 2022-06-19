@@ -1,0 +1,28 @@
+.products {
+  position: relative;
+  cursor: pointer;
+}
+.product-list-small {
+  position: absolute;
+  top: 30px;
+  display: none;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.6);
+}
+.product-list-small a {
+  text-decoration: none;
+}
+.product-list-item {
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.product-list-item:hover {
+  color: black;
+  background: rgba(255, 255, 255, 0.8);
+}
+.products:hover .product-list-small {
+  display: flex;
+}

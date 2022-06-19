@@ -1,0 +1,20 @@
+
+.intro-title {
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-title span {
+    color: white;
+    font-weight: 600;
+}
+
+.intro-title h1 {
+    text-align: center;
+    color: #9AA9AB;
+    font-family: "Open Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+}

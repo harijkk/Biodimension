@@ -1,0 +1,197 @@
+.products-container {
+  background: #09161e;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.products-container h2 {
+  color: white;
+  font-weight: 600;
+  font-size: 36px;
+  font-family: "Strait", sans-serif;
+  margin: 40px 0px 80px;
+  text-align: center;
+}
+.products-list {
+  display: flex;
+  flex-direction: row;
+  min-width: 1200px;
+  justify-content: space-around;
+  align-items: center;
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: rgba(255, 255, 255, 0.019);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  height: 420px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+.product-card h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.product-card button {
+  margin: 0 auto;
+  height: 50px;
+  width: 200px;
+  background: transparent;
+  color: #0dffd3;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  border: 0.5px solid #6f6666;
+  font-weight: 600;
+  font-size: 12px;
+}
+.product-card button:hover {
+  transition: all 0.2s ease-in-out;
+  background-color: #67d9c4;
+  color: #09161e;
+}
+.recognitions-container {
+  background: linear-gradient(
+    91.82deg,
+    #005163 6.41%,
+    #161e3e 54.72%,
+    #000000 98.54%
+  );
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.recognitions-container h2,
+.support-container h2 {
+  font-family: "Strait", sans-serif;
+  color: white;
+  font-size: 36px;
+  font-weight: 600;
+  padding: 10px;
+  text-align: center;
+}
+.subtitle {
+  color: rgb(181, 181, 181);
+  font-size: 18px;
+  text-align: center;
+  padding: 0px 20px;
+  max-width: 550px;
+  font-weight: 500;
+}
+.recognitions-list {
+  display: flex;
+  flex-direction: row;
+}
+.recognition-card {
+  height: 280px;
+  background: rgba(8, 40, 54, 0.5);
+  text-align: center;
+  padding: 15px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-width: 220px;
+  z-index: 1;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  overflow: hidden;
+}
+.recognition-img {
+  height: 60px;
+  margin: 0 auto;
+  width: 160px;
+}
+.recognition-img img {
+  height: 100%;
+  width: 100%;
+}
+.recognition-card:hover {
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4);
+  background: rgba(14, 69, 92, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+.recognition-position {
+  font-family: "Strait", sans-serif;
+  color: rgb(38, 38, 38);
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #5df3e1;
+  border-radius: 32px;
+  width: 120px;
+  letter-spacing: 2px;
+  padding: 8px 0px;
+  margin: 0 auto;
+}
+.recognition-title {
+  font-family: "Open Sans", sans-serif;
+  color: #bebebe;
+  font-size: 14px;
+}
+.right {
+  margin: 20px;
+  overflow: hidden;
+}
+.right img {
+  object-fit: cover;
+  height: 100%;
+}
+@media only screen and (max-width: 900px) {
+  .products-container {
+    min-height: 100vh;
+    height: fit-content;
+  }
+  .products-container h2 {
+    font-size: 32px;
+    margin: 60px 10px 30px;
+  }
+  .products-list {
+    flex-direction: column;
+    min-width: 0px;
+    justify-content: center;
+    margin: 20px 0px 40px;
+  }
+  .product-card {
+    margin: 15px 0px;
+    height: 420px;
+    width: 95%;
+  }
+  .recognitions-container {
+    min-height: 100vh;
+    height: fit-content;
+    flex-direction: column;
+  }
+  .recognitions-container h2,
+  .support-container h2 {
+    font-size: 32px;
+    margin: 60px 0px 30px;
+  }
+  .recognitions-list {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+  }
+  .recognition-card {
+    height: 240px;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 90%;
+  }
+
+  .recognition-position {
+    font-size: 20px;
+  }
+  .recognition-title {
+    font-size: 18px;
+  }
+}
