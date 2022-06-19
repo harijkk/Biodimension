@@ -52,7 +52,7 @@ def send1(request):
             fail_silently=False,
         )
 
-        return RequestContext(request,'contact')
+        return HttpResponseRedirect('contact')
     else:
         return HttpResponse("INVALID REQUEST")
 

@@ -93,6 +93,7 @@ DATABASES = {
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
+CSRF_TRUSTED_ORIGINS = ['https://*.biodimension.com','https://*.127.0.0.1']
 
 AUTH_PASSWORD_VALIDATORS = [
     {
