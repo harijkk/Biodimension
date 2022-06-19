@@ -47,7 +47,7 @@ def send1(request):
             "Name : " + name1 + "\n Email Address  " +
             email1 + " \n Message typed " + message1,
             email1,
-            ['harijkk@gmail.com'],
+            ['biodimension1@gmail.com'],
             fail_silently=False,
         )
 
@@ -64,10 +64,10 @@ def send_attach(request):
             name1,
             "Name : " + name1 + "\n Email Address  " + email1,
             email1,
-            ['harijkk@gmail.com']
+            ['biodimension1@gmail.com']
 
         )
-        file = request.FILES['upload']
+        file = request.FILES['upload1']
         email_req.attach(file.name, file.read(), file.content_type)
         email_req.send()
         return HttpResponseRedirect('join')

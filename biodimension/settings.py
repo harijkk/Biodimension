@@ -11,6 +11,11 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 import os
+import environ
+
+env = environ.Env()
+environ.Env.read_env()
+
 
 from pathlib import Path
 
@@ -22,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-=2mc3t6f*@b&d_aa+c44w@bo76@_279r^5)z-pr5s-w#d$mwe^'
+SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -138,8 +143,11 @@ STATICFILES_DIRS = [
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+
+
+
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = '587'
-EMAIL_HOST_USER = 'harijkk7@gmail.com'
-EMAIL_HOST_PASSWORD = 'idk222'
+EMAIL_HOST_USER = env('email_user')
+EMAIL_HOST_PASSWORD = env('email_pass')
 EMAIL_USE_TLS = True
