@@ -1,0 +1,263 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BioDimension | BioDcornea</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'navoptions.css' %}"
+    />
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css'%}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'navbar.css' %}" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'product-styles.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'header-class.css'%}"
+    />
+  </head>
+  <body>
+    {% include 'nav.html' %}
+    <div class="body-container2">
+      <div class="top-img-container">
+        <img src="{% static 'images/background1.png' %}" alt="" />
+        <h1 class="top-title">BIODCORNEA</h1>
+      </div>
+      <div class="bottom-half-container">
+        <h2 data-aos="fade-up" data-aos-duration="500" style="max-width: 70%">
+          Our <span>4D bioprinted</span> corneal substitutes enables
+          personalized corneal implant with controllable structure and
+          refractive ability.
+        </h2>
+      </div>
+      <div class="product-about-container special" style="overflow: hidden">
+        <p
+          class="product-left-desc"
+          data-aos="fade-right"
+          data-aos-duration="500"
+        >
+          Normal human corneal epithelial cells are cultivated to form a
+          stratified, squamous epithelium that closely resembles normal human
+          corneal tissue in BioDimensions BioDcornea. The corneal cells
+          differentiate into a multi-layered structure after being cultivated on
+          specially prepared cell culture inserts with serum-free media.
+        </p>
+        <div
+          class="product-right-img"
+          data-aos="fade-left"
+          data-aos-duration="500"
+        >
+          <img src="{% static 'images/cornea.png' %}" alt="" />
+        </div>
+      </div>
+
+      <div class="commericial-wrapper">
+        <div class="commercial-container">
+          <h2 class="text_large" data-aos="fade-up" data-aos-duration="500">
+            Commercial Applications
+          </h2>
+
+          <div
+            class="applications-list"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            <div class="left-application-list">
+              <p>Latanoprost Drug Delivery</p>
+              <p>Model Compound Drug Delivery</p>
+            </div>
+            <div class="right-application-list">
+              <p>Dry Eye Disease</p>
+              <p>Corneal Wound Healing</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="marker-container">
+        <h2
+          class="header-class text_large"
+          data-aos="fade-up"
+          data-aos-duration="500"
+        >
+          Specific Markers
+        </h2>
+        <div class="markers-box">
+          <div class="left-markers-container">
+            <div
+              class="differentiation-markers"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
+              <h3 class="marker-header">Differentiation markers</h3>
+              <div class="marker">
+                <p>Hémidesmosomes</p>
+                <p>Keratin</p>
+                <p>CD44</p>
+              </div>
+            </div>
+          </div>
+          <div class="right-markers-container">
+            <div
+              class="dermal-epidermis-markers"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
+              <h3 class="marker-header">TECHNOLOGY</h3>
+              <div class="marker">
+                <p style="font-weight: 600; font-size: 18px">
+                  Eye Irritation Test(OECD TG 492)
+                </p>
+                <p style="max-width: 500px; margin: 0 auto">
+                  By measuring the cytotoxic effect of a topically applied
+                  chemical or formulation on the EpiOcular cornea epithelial
+                  model, the EpiOcular Eye Irritation Test predicts the acute
+                  eye irritation potential of a chemical or formulation.
+                  Chemicals (substances) can be identified using this in vitro
+                  hazard assessment
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-format-wrapper">
+        <div class="product-format-container">
+          <h2 class="text_large" data-aos="fade-up" data-aos-duration="500">
+            Product Format
+          </h2>
+          <div class="product-format-list">
+            <div
+              class="product-format-item"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
+              <div class="product-format-img">
+                <img src="{% static 'images/format.png' %}" alt="" />
+              </div>
+              <p>0.47 cm2</p>
+            </div>
+            <div
+              class="product-format-item"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
+              <div class="product-format-img">
+                <img src="{% static 'images/format2.png' %}" alt="" />
+              </div>
+              <p>1.17 cm2</p>
+            </div>
+            <div
+              class="product-format-item"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
+              <div class="product-format-img">
+                <img src="{% static 'images/format3.png' %}" alt="" />
+              </div>
+              <p>3.34 cm2</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="advantages-container">
+        <h2
+          class="header-class text_large"
+          data-aos="fade-up"
+          data-aos-duration="500"
+        >
+          BioDCornea's Advantage
+        </h2>
+        <p class="text_medium" data-aos="fade-up" data-aos-duration="500">
+          Our BioDcornea models are created using the most up-to-date 4D
+          Bioprinting technology and offer a variety of benefits
+        </p>
+        <div class="advantage-list">
+          <div
+            class="advantage-item"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            <div class="advantage-img">
+              <img src="{% static 'images/adv1.png' %}" alt="" />
+            </div>
+            <p>Uniform tissue constructs</p>
+          </div>
+          <div
+            class="advantage-item"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            <div class="advantage-img">
+              <img src="{% static 'images/adv2.png' %}" alt="" />
+            </div>
+            <p>Increased tissue revival duration</p>
+          </div>
+          <div
+            class="advantage-item"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            <div class="advantage-img">
+              <img src="{% static 'images/adv3.png' %}" alt="" />
+            </div>
+            <p>Varied shelf life based on the user convenient</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include 'footer.html' %}
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      function toggle() {
+        const toggleBtn = document.getElementById("toggler");
+        const navbarLinks = document.querySelector(".nav-items");
+        const navUl = document.querySelector(".nav-ul");
+        navbarLinks.classList.toggle("active");
+        navbUl.classList.toggle("active");
+      }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      $(window).scroll(function () {
+        if ($(window).scrollTop() >= 250) {
+          $(".navbar").css(
+            "background",
+            "linear-gradient(90deg, #092225 0%, #196975 0%)"
+          );
+          $(".navbar").css("box-shadow", "4px 4px 8px rgb(0, 0, 0, 0.2)");
+        } else {
+          $(".navbar").css("background", "transparent");
+          $(".navbar").css("box-shadow", "0px 0px 0px rgb(0, 0, 0, 0.2)");
+        }
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

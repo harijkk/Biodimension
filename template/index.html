@@ -1,0 +1,291 @@
+{% extends 'base.html' %} {% load static %} 
+ {% block content%}
+{% include 'nav.html' %}
+    <div class="body-container">
+      <div class="main-container">
+        <div class="yellow-circle"></div>
+        <h1>
+          <span class="glow">Redefining</span> the research in a more <span class="glow">humane way</span>
+        </h1>
+        <a href="#about" class="explore">
+          <div class="down">
+            <img src="{% static 'images/down.png' %}" alt="down" />
+          </div>
+          <p>EXPLORE</p>
+        </div>
+      </a>
+      <div class="about-container" id="about" style="overflow:hidden;">
+        <div class="about-main" style="position:relative">
+          <div class="yellow-circle-about" 
+          style="position: absolute;
+          top:400px;
+          left:0;
+          background: rgba(255, 255, 255, 0.8);
+          box-shadow: 0px 0px 250px 250px rgba(46, 242, 255, 0.25);
+          transform: matrix(-1, 0, 0, 1, 0, 0);"
+        >
+      </div>
+          <h3 class="about-text" data-aos="fade-up" data-aos-duration="600">
+            <span>BioDimension's vision </span>is to eliminate the animal
+            experiments from the research ecosystem using its non-animal
+            alternatives
+          </h3>
+          <div class="about-section">
+            <div
+              class="left"
+              data-aos="fade-right"
+              data-aos-delay="300"
+              data-aos-duration="700"
+            >
+              <p>
+                For centuries animals are used in experiments to determine the
+                safety and toxicity of cosmetic and chemical ingredients, but
+                animal-based methods are not sufficiently trustworthy to
+                accurately predict adverse outcomes on human health and the
+                environment.
+              </p>
+              <p>
+                We are a tissue engineering company working on human tissue
+                models for the application of cosmetic and pharma testing
+                applications. We are a tissue engineering company working on
+                human tissue models for the application of cosmetic and pharma
+                testing applications.
+              </p>
+            </div>
+            <div
+              class="right"
+              data-aos="fade-left"
+              data-aos-delay="300"
+              data-aos-duration="700"
+            >
+              <img src="{% static 'images/rat.png' %}" alt="down" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="products-container" id="products">
+      <h2 data-aos="fade-up" data-aos-duration="600">
+        Our Scientifically Proven <span>Bioprinted Products</span>
+      </h2>
+      <div
+        class="products-list"
+        data-aos="fade-up"
+        data-aos-duration="600"
+        data-aos-delay="200"
+      >
+        <div class="product-card">
+          <div class="product-img">
+            <img src="{% static 'images/p1.png' %}" alt="" />
+          </div>
+          <h3>BioDskin</h3>
+         <a href="/products/bioDskin"> <button>KNOW MORE</button></a>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="{% static 'images/p2.png' %}" alt="" />
+          </div>
+          <h3>BioDvaginal</h3>
+          <a href="/products/bioDvaginal"> <button>KNOW MORE</button></a>
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <img src="{% static 'images/p3.png' %}" alt="" />
+          </div>
+          <h3>BioDcornea</h3>
+          <a href="/products/bioDcornea"> <button>KNOW MORE</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="recognitions-container">
+      <h2>Awards & Recognitions</h2>
+      <p class="subtitle">We're pleased to share some of the honours and awards the BioDimension family has recieved</p>
+      <div class="recognitions-list">
+        <div class="dark-bg"></div>
+        <div class="left-bg">
+          <img src="{% static 'images/left.png' %}" alt="" />
+        </div>
+
+        <div
+          class="recognition-card"
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-delay="200"
+        >
+          <div class="recognition-img">
+            <img src="{% static 'images/birac_new.png' %}" alt="" />
+          </div>
+          <h3 class="recognition-position">Winner</h3>
+          <p class="recognition-title">
+            BIG grant awardee<br/> 19th call
+          </p>
+        </div>
+        <div
+          class="recognition-card"
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-delay="200"
+        >
+          <div class="recognition-img">
+            <img src="{% static 'images/aye.png' %}" alt="" />
+          </div>
+          <h3 class="recognition-position">Winner</h3>
+          <p class="recognition-title">
+            AYE League 2022          
+        </p>
+        </div>
+        <div
+          class="recognition-card"
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-delay="200"
+        >
+          <div class="recognition-img">
+            <img src="{% static 'images/human.png' %}" alt="" />
+          </div>
+          <h3 class="recognition-position">TOP 6</h3>
+          <p class="recognition-title">
+            Humane Entrepreneurship program
+          </p>
+        </div>
+        <div
+        class="recognition-card"
+        data-aos="fade-up"
+        data-aos-duration="600"
+        data-aos-delay="200"
+      >
+        <div class="recognition-img">
+          <img src="{% static 'images/aim_white.png' %}" alt="" />
+        </div>
+        <h3 class="recognition-position">TOP 22
+        </h3>
+        <p class="recognition-title">
+          Atal Innovation Mission
+          -PRIME program
+        </p>
+      </div>
+        <div
+          class="recognition-card"
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-delay="200"
+        >
+          <div class="recognition-img">
+            <img src="{% static 'images/stanford_seed.png' %}" alt="" />
+          </div>
+          <h3 class="recognition-position">TOP 15</h3>
+          <p class="recognition-title">
+            Stanford Seed India Program 2021
+          </p>
+        </div>
+
+      <div
+      class="recognition-card"
+      data-aos="fade-up"
+      data-aos-duration="600"
+      data-aos-delay="200"
+    >
+      <div class="recognition-img">
+        <img src="{% static 'images/dassault.png' %}" alt="" />
+      </div>
+      <h3 class="recognition-position">TOP 3</h3>
+      <p class="recognition-title">
+        Dassault 3DX pitching event India-2021
+      </p>
+    </div>
+   
+        <div class="right-bg">
+          <img src="{% static 'images/right.png' %}" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="support-container">
+      <div class="yellow-spark"></div>
+      <h2 data-aos="fade-up" class="header-class">We Work with the Best Partners</h2>
+      <p class="subtitle">We've integrated with these remarkable supporting partners and more...</p>
+      <div class="support-list">
+        <div
+          class="support-img"
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-delay="0"
+        >
+          <img src="{% static 'images/sp1.png' %}" alt="" />
+        </div>
+        <div
+          class="support-img"
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-delay="50"
+        >
+          <img src="{% static 'images/sp2.png' %}" alt="" />
+        </div>
+        <div
+          class="support-img"
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-delay="100"
+        >
+          <img src="{% static 'images/sp3.png' %}" alt="" />
+        </div>
+        <div
+          class="support-img"
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-delay="150"
+        >
+          <img src="{% static 'images/sp4.png' %}" alt="" />
+        </div>
+        <div
+          class="support-img"
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-delay="200"
+        >
+          <img src="{% static 'images/sp5.png' %}" alt="" />
+        </div>
+        <div
+          class="support-img"
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-delay="250"
+        >
+          <img src="{% static 'images/sp6.png' %}" alt="" />
+        </div>
+        <div
+          class="support-img"
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-delay="300"
+        >
+          <img src="{% static 'images/sp7.png' %}" alt="" />
+        </div>
+        <div
+          class="support-img"
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-delay="350"
+        >
+          <img src="{% static 'images/sp8.png' %}" alt="" />
+        </div>
+        <div
+          class="support-img"
+          data-aos="fade-up"
+          data-aos-duration="600"
+          data-aos-delay="400"
+        >
+          <img src="{% static 'images/sp9.png' %}" alt="" />
+        </div>
+      </div>
+    </div>
+    {% include 'footer.html' %}
+    <script>
+      function toggle()
+      {
+        const toggleBtn=document.getElementById("toggler");
+        const navbarLinks = document.querySelector(".nav-items");
+        console.log(navbarLinks);
+        navbarLinks.classList.toggle("active");
+      }
+    </script>
+ {% endblock %}

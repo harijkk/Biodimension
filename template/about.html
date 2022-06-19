@@ -1,0 +1,328 @@
+{% extends 'base.html' %} {% load static %}
+<br />
+<br />
+{% block content%} {% include 'nav.html' %}
+
+<div class="body-container2">
+  <div class="about-main-container flex">
+    <h2 class="title">ABOUT US</h2>
+    <div class="about-main-section">
+      <div class="about-left">
+        <p data-aos="fade-left" data-aos-delay="300" data-aos-duration="700">
+          We, at Biodimensions, are the light at the end of the tunnel for the
+          beauty and medical industries' cruel animal testing. We developed a
+          humane approach to animal testing utilizing 4D technology and were
+          recognized as one of the top six startups by the Humane
+          Entrepreneurship Program.
+        </p>
+        <p data-aos="fade-right" data-aos-delay="300" data-aos-duration="700">
+          Our purpose here at Biodimensions is to upgrade bio-industries with 4D
+          bioproducts to deliver faster and more affordable gold standards for
+          product testing and development. Our aim is to be a market leader in
+          providing bioprinted organs for industrial and patient usage.
+          Redefining research in a more humane way is our motto, we believe that
+          non-animal alternatives should be used to eradicate animal
+          experimentation for medical industries from the research ecosystem.
+        </p>
+      </div>
+      <div
+        class="about-right"
+        data-aos="fade-right"
+        data-aos-delay="300"
+        data-aos-duration="700"
+      >
+        <img src="{% static 'images/about-img.jpg'%}" alt="" />
+        <p class="attribution" style="color: #1a616c; font-size: 12px">
+          Photo by
+          <a
+            style="text-decoration: none; color: rgb(171, 171, 171)"
+            href="https://unsplash.com/@drew_hays?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Drew Hays
+          </a>
+          on Unsplash
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pipeline-container">
+    <div class="pipeline-title">
+      <h2 class="about-right" data-aos="fade-up" data-aos-duration="400">
+        PIPELINE
+      </h2>
+    </div>
+    <div
+      class="mobile-pipeline"
+      data-aos="fade-up"
+      data-aos-delay="100"
+      data-aos-duration="400"
+    >
+      <img src="{% static 'images/pipeline.png'%}" alt="" />
+    </div>
+    <div class="pipeline-section">
+      <div class="progress-title">
+        <p>Research</p>
+        <p>Development</p>
+        <p>Validation</p>
+        <p>Regulatory Approval</p>
+      </div>
+      <div class="progress-section">
+        <div class="p1">
+          <h3 class="product-cat">Artificial Skin</h3>
+          <div class="progress-group">
+            <div class="progress-bars">
+              <div
+                class="progress_max"
+                data-aos="fade-right"
+                data-aos-duration="500"
+                data-aos-delay="200"
+                data-aos-easing="linear"
+              >
+                <img src="{% static 'images/progress_full.png'%}" alt="" />
+                <div
+                  class="progress_half"
+                  data-aos="fade-right"
+                  data-aos-duration="500"
+                  data-aos-easing="linear"
+                >
+                  <img src="{% static 'images/progress_34.png'%}" alt=" " />
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p2">
+          <h3 class="product-cat">Vaginal Epithelium</h3>
+          <div class="progress-group">
+            <div class="progress-bars">
+              <div
+                class="progress_max"
+                data-aos="fade-right"
+                data-aos-duration="500"
+                data-aos-delay="300"
+                data-aos-easing="linear"
+              >
+                <img src="{% static 'images/progress_full.png'%}" alt=" " />
+                <div
+                  class="progress_half"
+                  data-aos="fade-right"
+                  data-aos-duration="500"
+                  data-aos-easing="linear"
+                >
+                  <img src="{% static 'images/progress_half.png'%}" alt=" " />
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="p3">
+          <h3 class="product-cat">Artificial Cornea</h3>
+          <div class="progress-group">
+            <div class="progress-bars">
+              <div
+                class="progress_max"
+                data-aos="fade-right"
+                data-aos-duration="500"
+                data-aos-delay="200"
+                data-aos-easing="linear"
+              >
+                <img src="{%static 'images/progress_full.png'%}" alt=" " />
+                <div
+                  class="progress_half"
+                  data-aos="fade-right"
+                  data-aos-duration="500"
+                  data-aos-easing="linear"
+                >
+                  <img src="{%static 'images/progress_quarter.png'%}" alt=" " />
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="team-container flex">
+    <h2
+      class="team-title"
+      data-aos="fade-up"
+      data-aos-delay="100"
+      data-aos-duration="400"
+    >
+      OUR TEAM
+    </h2>
+    <div class="team-list flex">
+      <div
+        class="team-card flex"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-duration="400"
+      >
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="team-img">
+              <img src="{% static 'images/team_3.jpg' %}" alt="manojkumar " />
+            </div>
+            <p class="position">DIRECTOR(Technical)</p>
+            <p class="name">Manojkumar.S </p>
+            <p class="degree">M.Tech (Biotechnology)</p>
+          </div>
+          <div class="flip-card-back flex">
+            <p>
+              Manojkumar S, Founder, and Partner at Biodimensions. Experienced
+              in the field of cell culture and human tissue handling has a
+              Master's in Biotechnology from VIT University. He is responsible
+              for the technology and managing the company's strategy. His core
+              skills include 3D culture, bioprinting, histology, tissue
+              handling, and Lab Management.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="team-card flex"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-duration="400"
+      >
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="team-img">
+              <img src="{% static 'images/team_1.jpeg' %}" alt="ranjit " />
+            </div>
+            <p class="position">DIRECTOR(Commercial)</p>
+            <p class="name">Ranjith Kumar Velusamy</p>
+            <p class="degree">M.Tech (Biotechnology)</p>
+          </div>
+          <div class="flip-card-back flex">
+            <p>
+              Graduating from VIT University with a Master's degree in
+              Biotechnology, Ranjith Kumar is skilled in B2B sales, client
+              relation management, lead generation, and business operations.
+              With over six years of experience in the Biotech and Pharma
+              industry, he holds the vision of the company against animal
+              testing.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="team-card flex"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-duration="400"
+      >
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="team-img">
+              <img src="{% static 'images/team_4.jpeg' %}" alt="pradeep " />
+            </div>
+            <p class="position">DIRECTOR(Operations)</p>
+            <p class="name">Pradeep Arunachalam</p>
+            <p class="degree">M.Tech (Biotechnology), MBA (Pharm mgmt)</p>
+          </div>
+          <div class="flip-card-back flex">
+            <p>
+              Being an alumnus of Vellore Institute of Technology, Pradeep
+              Arunachalam has a Master's degree in Biotechnology. He is
+              knowledgeable in biopharmaceutical R&D, GMP, GLP, and ICH
+              guidelines, with over six years of experience in biopharmaceutical
+              research and manufacturing. He is in charge of the company's
+              operations, quality assurance, and project management.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="team-card flex"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-duration="400"
+      >
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="team-img">
+              <img src="{% static 'images/team_2.jpeg' %}" alt="arul " />
+            </div>
+            <p class="position">Scientist</p>
+            <p class="name">Dr. J. Arul Daniel</p>
+            <p class="degree">PhD (Biotechnology)</p>
+
+          </div>
+          <div class="flip-card-back flex">
+            <p>
+              Dr. J. Arul Daniel is working as an associate scientist has a PhD
+              in phytomedicine and metabolic disorder, where he has gained
+              knowledge in cell culture and animal biology. He is presently
+              working with an empowering team in developing 3D tissue cultures
+              for testing the safety of cosmetic products. His vision is to
+              support the team to develop transformative products into the hands
+              of millions of people.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="team-card flex"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-duration="400"
+      >
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="team-img">
+              <img src="{% static 'images/team_5.png' %}" alt="chirag " />
+            </div>
+            <p class="position">Junior Scientist</p>
+            <p class="name">Chirgkumar H. Rasbhara</p>
+            <p class="degree">M.Tech (Biotechnology)</p>
+
+          </div>
+          <div class="flip-card-back flex">
+            <p>
+           From the past 10 months of working in the field of tissue engineering, I have gained expertise in the isolation, cryopreservation, and revival of keratinocyes and histopathology of tissue. With the vision of organization, the research I am doing on is at the forefront of the tissue engineering and bioprinting fields which will help me to make a mark in scientific world.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="team-card flex"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-duration="400"
+      >
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="team-img">
+              <img src="{% static 'images/team_6.jpg' %}" alt="logo " />
+            </div>
+            <p class="position">Junior Scientist</p>
+            <p class="name">Annie Sherlin</p>
+            <p class="degree">M.Tech (Biotechnology)</p>
+
+          </div>
+          <div class="flip-card-back flex">
+            <p>
+            I'm Annie Sherlin A Mtech (Biotechnology) working as Junior scientist at BioDimension Technology Pvt Ltd. At present, I'm working on mammalian cell culture for the development of full-thickness human skin model with the aid of bioprinting technology and it's visualization using histological approaches.            </p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% include 'footer.html' %}
+<script>
+  function toggle() {
+    const toggleBtn = document.getElementById("toggler");
+    const navbarLinks = document.querySelector(".nav-items");
+    const navUl = document.querySelector(".nav-ul");
+    navbarLinks.classList.toggle("active");
+    navbUl.classList.toggle("active");
+  }
+</script>
+{% endblock %}

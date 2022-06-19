@@ -1,0 +1,165 @@
+{%extends 'base.html'%} {% load static %}
+<br />
+{% block title %} Welcome to BlogApp {% endblock %}
+<br />
+{%block content %} {% include 'nav.html' %}
+<div
+  class="blog-intro-container"
+  style="
+    background: #191826;
+    width: 100%;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  "
+>
+  <div
+    class="yellow-dot"
+    style="
+      position: absolute;
+      background: rgba(255, 255, 255, 0.8);
+      box-shadow: 0px 0px 250px 250px rgba(46, 242, 255, 0.25);
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+      top: 0;
+      left: 0;
+    "
+  ></div>
+  <h1
+    style="
+      font-weight: 600;
+      color: white;
+      font-size: 60px;
+      text-align: center;
+      margin: 10px 20px;
+    "
+  >
+    Welcome to our blogs
+  </h1>
+  <p
+    style="
+      color: white;
+      font-size: 16px;
+      max-width: 620px;
+      text-align: center;
+      color: rgb(201, 201, 201);
+      letter-spacing: 1px;
+      margin: 10px;
+    "
+  >
+    Stay updated with the latest tissue engineering research, case studies and
+    insights shared by the BioDimension Team.
+  </p>
+  <div
+    class="green-dot"
+    style="
+      position: absolute;
+      background: rgba(255, 255, 255, 0.8);
+      box-shadow: 0px 0px 250px 250px rgba(106, 247, 154, 0.19);
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+      bottom: 0;
+      right: 0;
+    "
+  ></div>
+</div>
+<div
+  class="main-card-container"
+  style="background: linear-gradient(50deg, #051517 0%, #0a343a 100%)"
+>
+  <div
+    class="card-container"
+    style="
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 1300px;
+      margin: 0px auto;
+      padding: 40px 0px;
+    "
+  >
+    {% for p in posts reversed %}
+    <div
+      class="card"
+      style="
+        width: 380px;
+        height: 550px;
+        padding: 20px;
+        margin: 20px;
+        background: rgba(255, 255, 255, 0.22);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+      "
+    >
+      <div class="card-img" style="height: 180px; width: 100%">
+        <img
+          style="width: 100%; height: 100%; object-fit: cover"
+          src="/media/{{p.image}}"
+        />
+      </div>
+      <h4
+        class="card-tag"
+        style="
+          font-size: 12px;
+          text-transform: uppercase;
+          font-weight: 600;
+          color: #676767;
+          background: rgba(255, 255, 255, 0.59);
+          border-radius: 24px;
+          width: fit-content;
+          letter-spacing: 1.2px;
+          padding: 5px 10px;
+          margin: 20px 0px;
+        "
+      >
+        {{p.tag}}
+      </h4>
+      <p
+        class="card-title"
+        style="
+          color: white;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 1.2;
+          font-family: 'Open Sans', sans-serif;
+        "
+      >
+        {{p.title}}
+      </p>
+      <p
+        class="card-date"
+        style="
+          font-size: 13px;
+          color: white;
+          font-family: 'Open Sans', sans-serif;
+        "
+      >
+        {{p.add_date.date}} | {{p.reading_time}} min read
+      </p>
+      <p
+        class="card-author"
+        style="
+          font-size: 16px;
+          font-weight: 600;
+          color: #00ffd9;
+          font-family: 'Open Sans', sans-serif;
+        "
+      >
+        {{p.author}}
+      </p>
+      <div class="card-desc">{{p.content | truncatewords:16 | safe}}</div>
+      <a href="/blog/{{p.post_id}}" class="btn">READ MORE</a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% include 'footer.html' %}
+<script>
+  function toggle() {
+    const toggleBtn = document.getElementById("toggler");
+    const navbarLinks = document.querySelector(".nav-items");
+    console.log(navbarLinks);
+    navbarLinks.classList.toggle("active");
+  }
+</script>
+{%endblock%}
