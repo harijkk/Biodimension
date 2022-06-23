@@ -43,7 +43,7 @@
   height: 50px;
   width: 200px;
   background: transparent;
-  color: #0dffd3;
+  color: #81d7c7;
   letter-spacing: 0.2rem;
   text-align: center;
   border: 0.5px solid #6f6666;
@@ -116,27 +116,32 @@
   height: 100%;
   width: 100%;
 }
-.recognition-card:hover {
-  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4);
-  background: rgba(14, 69, 92, 0.4);
-  transition: all 0.3s ease-in-out;
-}
+
 .recognition-position {
   font-family: "Strait", sans-serif;
   color: rgb(38, 38, 38);
   font-size: 18px;
   font-weight: 500;
-  background-color: #5df3e1;
+  background-color: rgba(115, 184, 176, 0.688);
   border-radius: 32px;
   width: 120px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   padding: 8px 0px;
   margin: 0 auto;
+  transition: 0.3s;
 }
 .recognition-title {
   font-family: "Open Sans", sans-serif;
   color: #bebebe;
   font-size: 14px;
+}
+.recognition-card:hover {
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4);
+  background: rgba(14, 69, 92, 0.4);
+  transition: 0.3s;
+}
+.recognition-card:hover .recognition-position {
+  background-color: rgba(99, 201, 189, 0.803);
 }
 .right {
   margin: 20px;
