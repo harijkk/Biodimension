@@ -311,14 +311,15 @@ ul {
   justify-content: space-between;
 }
 .copyright-container p {
-  color: #9aa9ab;
+  color: #797979;
   padding: 20px 40px;
   margin: 0;
 }
 .copyright-container p a {
   font-family: "Strait", sans-serif;
   text-decoration: none;
-  color: #f1f1f1;
+  color: #94bcbe;
+  border-bottom: 1px solid #74b0a7;
 }
 
 /*responsiveness*/
