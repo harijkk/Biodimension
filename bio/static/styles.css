@@ -259,6 +259,7 @@ ul {
   align-items: center;
   background-color: #073035;
   position: relative;
+  margin-bottom: -24px;
 }
 .yellow-spark {
   background: rgba(255, 255, 255, 0.8);
@@ -296,6 +297,28 @@ ul {
 }
 .top-img-container img {
   width: 100%;
+}
+
+/*copyright*/
+
+.copyright-container {
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.copyright-container p {
+  color: #9aa9ab;
+  padding: 20px 40px;
+  margin: 0;
+}
+.copyright-container p a {
+  font-family: "Strait", sans-serif;
+  text-decoration: none;
+  color: #f1f1f1;
 }
 
 /*responsiveness*/
