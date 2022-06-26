@@ -1,5 +1,7 @@
 {% load static %}
-<nav class="navbar" style="
+<nav
+  class="navbar"
+  style="
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
     height: 72px;
     width: 100%;
@@ -8,71 +10,87 @@
     left: 0;
     z-index: 1000;
     background: transparent;
-  ">
-    <div class="nav_container" style="
-      width: 1200px;
-      height: 100%;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-    ">
-        <div class="logo" style="width: fit-content; display: flex; flex-direction: row">
-            <div class="logo-img" style="height: 30px; width: auto">
-                <a href="/"><img style="height: 100%; width: 100%" src="{% static 'images/logo.png' %}" alt="logo" /></a>
-            </div>
-            <h1 style="
+  "
+>
+  <div class="nav_container">
+    <div
+      class="logo"
+      style="width: fit-content; display: flex; flex-direction: row"
+    >
+      <div class="logo-img" style="height: 30px; width: auto">
+        <a href="/"
+          ><img
+            style="height: 100%; width: 100%"
+            src="{% static 'images/logo.png' %}"
+            alt="logo"
+        /></a>
+      </div>
+      <h1
+        style="
           color: white;
           font-family: 'Strait', sans serif;
           letter-spacing: 4px;
           font-size: 20px;
           margin-left: 10px;
-        ">
-                <a style="text-decoration: none; color: white" href="/">BIODIMENSION</a>
-            </h1>
-        </div>
-        <div class="toggleBtn" id="toggler" onclick="toggle()">
-            <i class="fas fa-bars" style="font-size: 24px; color: rgb(113, 196, 168)"></i>
-        </div>
-        <div class="nav-items" style="align-self: center; margin-top: 15px">
-            <ul class="nav-ul" style="
+        "
+      >
+        <a style="text-decoration: none; color: white" href="/">BIODIMENSION</a>
+      </h1>
+    </div>
+    <div class="toggleBtn" id="toggler" onclick="toggle()">
+      <i
+        class="fas fa-bars"
+        style="font-size: 24px; color: rgb(113, 196, 168)"
+      ></i>
+    </div>
+    <div class="nav-items" style="align-self: center; margin-top: 15px">
+      <ul
+        class="nav-ul"
+        style="
           list-style: none;
           display: flex;
           font-weight: 500;
           font-family: 'Strait', sans serif;
           letter-spacing: 2px;
           font-size: 14px;
-        ">
-                <li style="padding: 10px">
-                    <a class="hover-underline-animation" style="text-decoration: none; color: white" href="/">HOME</a
+        "
+      >
+        <li style="padding: 10px">
+          <a
+            class="hover-underline-animation"
+            style="text-decoration: none; color: white"
+            href="/"
+            >HOME</a
           >
         </li>
         <li style="padding: 10px" class="hover-underline-animation">
           <a style="text-decoration: none; color: white" href="/about">ABOUT</a>
-                </li>
-                <li style="padding: 10px" class="hover-underline-animation products">
-                    <a style="text-decoration: none; color: white">PRODUCTS</a>
-                    <div class="product-list-small">
-                        <a href="/products/bioDcornea" class="product-list-item">
+        </li>
+        <li style="padding: 10px" class="hover-underline-animation products">
+          <a style="text-decoration: none; color: white">PRODUCTS</a>
+          <div class="product-list-small">
+            <a href="/products/bioDcornea" class="product-list-item">
               BioDcornea
             </a>
-                        <a href="/products/bioDskin" class="product-list-item">
+            <a href="/products/bioDskin" class="product-list-item">
               BioDskin
             </a>
-                        <a href="/products/bioDvaginal" class="product-list-item">
+            <a href="/products/bioDvaginal" class="product-list-item">
               BioDvaginal
             </a>
-                    </div>
-                </li>
-                <li style="padding: 10px" class="hover-underline-animation">
-                    <a style="text-decoration: none; color: white" href="/join">JOIN US</a
+          </div>
+        </li>
+        <li style="padding: 10px" class="hover-underline-animation">
+          <a style="text-decoration: none; color: white" href="/join"
+            >JOIN US</a
           >
         </li>
         <li style="padding: 10px" class="hover-underline-animation">
           <a style="text-decoration: none; color: white" href="/blogs">BLOGS</a>
-                </li>
-                <li style="padding: 10px" class="hover-underline-animation">
-                    <a style="text-decoration: none; color: white" href="/contact">CONTACT US</a
+        </li>
+        <li style="padding: 10px" class="hover-underline-animation">
+          <a style="text-decoration: none; color: white" href="/contact"
+            >CONTACT US</a
           >
         </li>
       </ul>

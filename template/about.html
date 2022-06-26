@@ -1,6 +1,9 @@
 {% extends 'base.html' %} {% load static %}
-<br /> {% block title %} BIODIMENSION | ABOUT {% endblock %}
-<br /> {% block content%} {% include 'nav.html' %}
+<br /> 
+{% block title %} BioDimension | About Us | Redefining the research in a more humane way {% endblock %}
+
+<br /> {% block content %}
+ <!-- {% include 'nav.html' %} -->
 
 <div class="body-container2">
     <div class="about-main-container flex">
@@ -26,7 +29,6 @@
             </div>
         </div>
     </div>
-
     <div class="pipeline-container">
         <div class="pipeline-title">
             <h2 class="about-right" data-aos="fade-up" data-aos-duration="400">
@@ -209,7 +211,7 @@
         </div>
     </div>
 </div>
-{% include 'footer.html' %}
+<!-- {% include 'footer.html' %} -->
 <script>
     function toggle() {
         const toggleBtn = document.getElementById("toggler");

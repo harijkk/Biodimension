@@ -1,83 +1,114 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="{% static 'images/logo.jpg' %}"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="{% static 'contact.css' %}" />
 
-    <link rel="stylesheet" type="text/css" href="{% static 'navoptions.css' %}" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'navoptions.css' %}"
+    />
 
     <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'navbar.css' %}" />
 
-    <title>BIODIMENSION | CONTACT US</title>
-</head>
+    <title>
+      BioDimension | Get in touch with us | Redefining the research in a more
+      humane way
+    </title>
+  </head>
 
-<body>
+  <body>
     {% include 'nav.html' %}
     <div class="body-container2 contact-container">
-        <div class="contactus-container">
-            <div class="contactus-left" style="height: 100%; padding: 100px 60px">
-                <h1>We'd love to hear from you</h1>
-                <div class="contact-image">
-                    <img src="{% static 'images/design.png'%}" alt="" />
-                </div>
-            </div>
-            <div class="contactus-right">
-                <h2>GET IN TOUCH</h2>
-                <form action="send_mail" method="post" class="contact_form">
-                    {% csrf_token %}
-                    <div class="input_div">
-                        <label for="name">Name</label>
-                        <input id="name" name="name" type="text" placeholder="Your Name..." />
-                    </div>
-                    <div class="input_div">
-                        <label for="email">Email</label>
-                        <input id="email" name="email" type="email" placeholder="xyz@email.com" />
-                    </div>
-                    <div class="input_div">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" type="text" placeholder="Type Your Message Here..."></textarea>
-                    </div>
-
-                    <input class="send-btn" type="submit" value="SEND" />
-                </form>
-            </div>
+      <div class="contactus-container">
+        <div class="contactus-left" style="height: 100%; padding: 100px 60px">
+          <h1>We'd love to hear from you</h1>
+          <div class="contact-image">
+            <img src="{% static 'images/design.png'%}" alt="" />
+          </div>
         </div>
+        <div class="contactus-right">
+          <h2>GET IN TOUCH</h2>
+          <form action="send_mail" method="post" class="contact_form">
+            {% csrf_token %}
+            <div class="input_div">
+              <label for="name">Name</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Your Name..."
+              />
+            </div>
+            <div class="input_div">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="xyz@email.com"
+              />
+            </div>
+            <div class="input_div">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                type="text"
+                placeholder="Type Your Message Here..."
+              ></textarea>
+            </div>
+
+            <input class="send-btn" type="submit" value="SEND" />
+          </form>
+        </div>
+      </div>
     </div>
-    {% include 'footer.html' %}
+    {% include 'footer.html' %} {% include 'copyright.html' %}
     <script>
-        function toggle() {
-            const toggleBtn = document.getElementById("toggler");
-            const navbarLinks = document.querySelector(".nav-items");
-            const navUl = document.querySelector(".nav-ul");
-            navbarLinks.classList.toggle("active");
-            navbUl.classList.toggle("active");
-        }
+      function toggle() {
+        const toggleBtn = document.getElementById("toggler");
+        const navbarLinks = document.querySelector(".nav-items");
+        const navUl = document.querySelector(".nav-ul");
+        navbarLinks.classList.toggle("active");
+        navbUl.classList.toggle("active");
+      }
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script>
-        $(window).scroll(function() {
-            if ($(window).scrollTop() >= 250) {
-                $(".navbar").css(
-                    "background",
-                    "linear-gradient(90deg, #092225 0%, #196975 0%)"
-                );
-                $(".navbar").css("box-shadow", "4px 4px 8px rgb(0, 0, 0, 0.2)");
-            } else {
-                $(".navbar").css("background", "transparent");
-                $(".navbar").css("box-shadow", "0px 0px 0px rgb(0, 0, 0, 0.2)");
-            }
-        });
+      $(window).scroll(function () {
+        if ($(window).scrollTop() >= 250) {
+          $(".navbar").css(
+            "background",
+            "linear-gradient(90deg, #092225 0%, #196975 0%)"
+          );
+          $(".navbar").css("box-shadow", "4px 4px 8px rgb(0, 0, 0, 0.2)");
+        } else {
+          $(".navbar").css("background", "transparent");
+          $(".navbar").css("box-shadow", "0px 0px 0px rgb(0, 0, 0, 0.2)");
+        }
+      });
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
+  </body>
 </html>

@@ -6,6 +6,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="{% static 'images/logo.jpg' %}"
+    />
     <title>BioDimension | BioDvaginal</title>
     <link
       rel="stylesheet"
@@ -27,17 +32,12 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="{% static 'product-styles.css' %}"
+      href="{% static 'product-style.css' %}"
     />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{% static 'header-class.css'%}"
-    />
+    <link rel="stylesheet" type="text/css" href="{% static 'header.css'%}" />
   </head>
   <body>
     {% include 'nav.html' %}
-
     <div class="body-container2">
       <div class="top-img-container">
         <img src="{% static 'images/background3.png' %}" alt="" />
@@ -70,35 +70,26 @@
           <img src="{% static 'images/p12.png' %}" alt="" />
         </div>
       </div>
-
       <div class="commericial-wrapper">
-        <div class="commercial-container">
-          <h2 class="text_large" data-aos="fade-up" data-aos-duration="500">
-            Commercial Applications
-          </h2>
-          <div
-            class="applications-list"
-            data-aos="fade-up"
-            data-aos-duration="500"
-          >
-            <div class="left-application-list">
-              <p>Vaginal Irritation</p>
-              <p>Bacterial adhesion</p>
-              <p>Omics</p>
+        <div class="dark-overlay">
+          <div class="commercial-container">
+            <h2 class="text_large" data-aos="fade-up" data-aos-duration="500">
+              Commercial Applications
+            </h2>
+            <div
+              class="applications-list"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
+              <div class="left-application-list">
+                <p>Vaginal Irritation</p>
+                <p>Bacterial adhesion</p>
+                <p>Omics</p>
+              </div>
             </div>
-            <!-- <div class="right-application-list">
-              <p><i class="fa-solid fa-angle-right"></i> Permeability</p>
-              <p><i class="fa-solid fa-angle-right"></i> Skin irritation</p>
-              <p><i class="fa-solid fa-angle-right"></i> Skin Hydration</p>
-              <p><i class="fa-solid fa-angle-right"></i> Skin Corrosion</p>
-              <p>
-                <i class="fa-solid fa-angle-right"></i> Epidermal Differentiation
-              </p>
-            </div> -->
           </div>
         </div>
       </div>
-
       <div class="marker-container">
         <h2 class="text_large" data-aos="fade-up" data-aos-duration="500">
           Specific Markers
@@ -184,16 +175,12 @@
         </div>
       </div>
       <div class="advantages-container">
-        <h2
-          data-aos="fade-up"
-          data-aos-duration="500"
-          class="header-class text_large"
-        >
-          BioDvaginal's Advantage
+        <h2 data-aos="fade-up" data-aos-duration="500" class="text_large">
+          BioDvaginal's Advantages
         </h2>
         <p class="text_medium" data-aos="fade-up" data-aos-duration="500">
           Our BioDvaginal models are created using the most up-to-date 4D
-          Bioprinting technology and offer a variety of benefits, including :
+          Bioprinting technology and offer a variety of benefits
         </p>
         <div class="advantage-list">
           <div
@@ -202,7 +189,7 @@
             data-aos-duration="500"
           >
             <div class="advantage-img">
-              <img src="{% static 'images/adv1.png' %}" alt="" />
+              <img src="{% static 'images/advantage.png' %}" alt="" />
             </div>
             <p>Uniform tissue constructs</p>
           </div>
@@ -212,7 +199,7 @@
             data-aos-duration="500"
           >
             <div class="advantage-img">
-              <img src="{% static 'images/adv2.png' %}" alt="" />
+              <img src="{% static 'images/advantage2.png' %}" alt="" />
             </div>
             <p>Increased tissue revival duration</p>
           </div>
@@ -222,14 +209,14 @@
             data-aos-duration="500"
           >
             <div class="advantage-img">
-              <img src="{% static 'images/adv3.png' %}" alt="" />
+              <img src="{% static 'images/advantage3.png' %}" alt="" />
             </div>
             <p>Varied shelf life based on the user convenient</p>
           </div>
         </div>
       </div>
     </div>
-    {% include 'footer.html' %}
+    {% include 'footer.html' %} {% include 'copyright.html' %}
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
