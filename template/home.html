@@ -67,7 +67,10 @@ humane way {% endblock %}
 </div>
 <div
   class="main-card-container"
-  style="background: linear-gradient(50deg, #051517 0%, #0a343a 100%)"
+  style="
+    background: linear-gradient(50deg, #051517 0%, #0a343a 100%);
+    margin-bottom: -24px;
+  "
 >
   <div
     class="card-container"
@@ -154,7 +157,7 @@ humane way {% endblock %}
     {% endfor %}
   </div>
 </div>
-{% include 'footer.html' %}
+<!-- {% include 'footer.html' %} -->
 <script>
   function toggle() {
     const toggleBtn = document.getElementById("toggler");
